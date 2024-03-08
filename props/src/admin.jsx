@@ -9,10 +9,6 @@ function Welcome(props) {
         role = "moderator";
     }
 
-    if (props.username === ""){
-        role = "You are Guest"
-        props.password = "You are Guest"
-    }
 
     return (
         <div>
@@ -26,7 +22,7 @@ function Welcome(props) {
             ) : (
                 <h1 className="Login">Please Log in</h1>
             )}
-        </div>
+        </div> 
     );
 }
 
